@@ -1,2 +1,0 @@
-# mobile-jd
-mobile-jd
