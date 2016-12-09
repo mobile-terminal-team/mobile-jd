@@ -1,9 +1,330 @@
-.Test:before {
-  content: 'Hello World';
+/*
+ @description    选项卡模块less
+ @author         lily
+ @time           2016/12/8 16:50
+ @version        1.0
+ */
+*{
+    padding:0;
+    margin:0;
 }
-.A {
-  color: #fff;
+.clearfix:after{
+    content: '';
+    width:100%;
+    clear: both;
+    display: block;
 }
-.TestAnother:before {
-  content: 'That will be change';
+html{
+    font-size: 62.5%;
+}
+body{
+    background-color: #f9f9f9;
+    font-family: "楷体";
+    width: 100%;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+@font-face {
+    font-family: 'iconfont';
+    src: url('../fonts/iconfont.eot');
+    src: url('../fonts/iconfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/iconfont.woff') format('woff'),
+    url('../fonts/iconfont.ttf') format('truetype'),
+    url('../fonts/iconfont.svg#iconfont') format('svg');
+}
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+header{
+     position: relative;
+     height: 36rem;
+     width: 100%;
+ }
+.header-hanner{
+    width: 100%;
+}
+.header-hanner div img{
+    width: 100%;
+    height: 36rem;
+}
+.header-top{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    padding: 25px 0;
+    z-index: 100;
+    color:#fff;
+}
+.header-top span{
+    width: 20%;
+    display: block;
+    float: left;
+    text-align: center;
+    font-size: 3em;
+}
+.header-top span:nth-of-type(2){
+    position: relative;
+    width: 60%;
+    height: 80px;
+    border:1px solid #3a3a3a;
+    background: rgba(225,225,225,0.5);
+    line-height: 80px;
+    -webkit-border-radius:15px;
+    -moz-border-radius:15px;
+    border-radius:15px;
+    box-sizing: border-box;
+}
+.header-top span:nth-of-type(2) input{
+    width: 70%;
+    height: 70px;
+    background: none;
+    border:none;
+    outline: none;
+    font-size: 1.5em;
+}
+.header-top span:nth-of-type(2) input::-webkit-input-placeholder{color:#fff;}
+.header-top span .iconfont{
+    font-size: 1.5em;
+}
+
+.section-top{
+    position: relative;
+    width: 100%;
+    height: 430px;
+}
+.section-top .nav span{
+    width:20%;
+    height: 120px;
+    padding: 30px 0 0;
+    text-align: center;
+    display: block;
+    float: left;
+    font-size: 2rem;
+}
+.section-top .nav span p{
+    padding:10px 0;
+}
+.section-top a{
+    color:#333;
+}
+.section-top a div.gundong{
+    position: absolute;
+    bottom:30px;
+    left:3%;
+    width: 90%;
+    height: 40px;
+    padding: 2%;
+    border-radius: 10px;
+    background: #fff;
+    font: 3.5em/30px "楷体";
+}
+.gundong span{
+    display: inline-block;
+    padding:5px;
+    height: 30px;
+}
+.gundong span:nth-of-type(1){
+    background: red;
+    border-radius: 5px;
+    color: #fff;
+}
+.gundong span:nth-of-type(2){
+    width: 65%;
+    position: relative;
+    overflow: hidden;
+}
+.gundong span:nth-of-type(2) ul{
+    -webkit-animation:10s active infinite linear;
+    -moz-animation:10s active infinite linear;
+    -ms-animation:10s active infinite linear;
+    -o-animation:10s active infinite linear;
+    animation:10s active infinite linear;
+    position: absolute;
+    top:0;
+    left: 0;
+}
+@-webkit-keyframes active {
+    0%{top:0px;}
+    17%{top:0;}
+    34%{top:-40px;}
+    51%{top:-40px;}
+    68%{top:-80px;}
+    89%{top:-80px;}
+    100%{top:-120px;}
+}
+
+.gundong span:nth-of-type(2) ul li{
+    color: #000;
+    font: 3rem/30px "宋体";
+    padding: 5px;
+    height: 30px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    list-style: none;
+}
+.gundong span:nth-of-type(2) ul li i{
+    font-style: normal;
+    color: red;
+    padding: 0 5px;
+}
+.section-middle{
+    height: 380px;
+    padding: 10px 0;
+    overflow: hidden;
+    position: relative;
+}
+.section-middle p{
+    width: 96%;
+    padding: 0 2%;
+    height: 50px;
+    font:3.5rem/50px "宋体";
+    color: #000;
+}
+.section-middle p span:nth-of-type(1){
+    color:red;
+    padding-right: 10px;
+    font:3.5rem/50px "楷体";
+}
+.hours,.minute,.second{
+    border:1px solid #6d6d72;
+    padding: 2px 6px;
+}
+.section-middle p span:nth-of-type(6){
+    color: red;
+    margin-left: 13%;
+}
+.section-middle p .iconfont{
+    font-size:4rem;
+    color: red;
+}
+.section-middle ul{
+    width: 100%;
+    height: 340px;
+}
+
+.section-middle ul li{
+    width: 25%;
+    padding: 50px 0;
+    height: 240px;
+    float: left;
+    text-align: center;
+    position: relative;
+}
+.section-middle ul li img{
+    width:60%;
+    height: 11rem;
+    margin-bottom: 12%;
+}
+.section-middle ul li span{
+    color: #fff;
+    font-size: 3rem;
+    padding: 2px 5px;
+    position: absolute;
+    top:45%;
+    left: 5%;
+    background: deepskyblue;
+}
+.section-middle ul li p{
+    color: red;
+}
+.section-middle ul li s{
+    color: #8f8f94;
+    font-size: 2.5rem;
+}
+.banner img{
+    width: 100%;
+    height: 400px;
+}
+.section-bottom{
+    height: 125rem;
+    margin-bottom: 120px;
+}
+.section-bottom ul{
+    width: 100%;
+}
+.section-bottom ul li{
+    width: 50%;
+    background: #fff;
+    height: 25rem;
+    float: left;
+    border-bottom: 1px solid #aaaaaa;
+    border-right: 1px solid #aaaaaa;
+    box-sizing:border-box;
+}
+.section-bottom ul li:nth-of-type(2n){
+    border-right: none;
+}
+.section-bottom ul li a{
+    width: 100%;
+    height: 100%;
+    display: block;
+    color: #333;
+}
+.section-bottom ul li span{
+    font-size: 3rem;
+    width: 36%;
+    padding:10% 2%;
+    float: left;
+}
+.section-bottom ul li img{
+    width: 50%;
+    height: 80%;
+    padding: 5%;
+    float: right;
+}
+
+footer{
+    width: 100%;
+    height: 120px;
+    background: #fff;
+    position: fixed;
+    bottom:0;
+    border-top:1px solid #aaaaaa;
+}
+.footer{
+    width: 100%;
+    padding: 8px 0;
+    z-index: 100;
+}
+.footer a{
+    width: 20%;
+    display: block;
+    float: left;
+    color:#333;
+}
+.footer span{
+    width: 100%;
+    display: block;
+    text-align: center;
+    font-size: 3em;
+}
+.footer span .iconfont{
+    font-size: 1.6em;
+}
+.footer span p{
+    padding: 5px;
+}
+footer .top{
+    font-size: 4rem;
+    position: fixed;
+    bottom: 15rem;
+    right: 2rem;
+    width: 4rem;
+    text-align: center;
+    height: 4rem;
+    padding: 1rem;
+    background: #999;
+    color: #fff;
+    display: block;
+    border-radius: 50%;
 }
