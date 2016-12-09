@@ -1,0 +1,9 @@
+.Test:before {
+  content: 'Hello World';
+}
+.A {
+  color: #fff;
+}
+.TestAnother:before {
+  content: 'That will be change';
+}
