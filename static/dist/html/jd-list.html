@@ -1,7 +1,7 @@
 <!--
        Author: Rundong Zou
-      version: 1.1
-         Date: 2016/12/09  17:10
+      version: 1.2
+         Date: 2016/12/09  20:35
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -12,6 +12,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <title>京东商品分类</title>
     <link rel="stylesheet" href="../css/jd-list.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_5bcuaatwcq4wvcxr.css" />
     <script src="../js/zepto.min.js"></script>
     <script src="../js/touch.js"></script>
     <script src="../js/template.js"></script>
@@ -21,7 +22,8 @@
 <body>
 
 <header id="header">
-
+    <i class="iconfont icon-zuozuo" style="line-height: 4rem;font-size:2.5rem;
+color: #999;"></i>
 </header>
 <aside id="aside"></aside>
 
@@ -277,6 +279,16 @@
             $('.section_wrap .pinpai').show().siblings().hide();
         }
         //$('.section_wrap section').eq(index).show().siblings().hide();
+    })
+</script>
+<!--跳转到详情页-->
+<script>
+    touch.on($('.section_wrap li'), 'tap', function(){
+        window.location.href= 'jd-detail.html';
+    })
+    //跳转到上一页
+     touch.on($('.icon-zuozuo'), 'tap', function(){
+        window.history.go(-1);
     })
 </script>
 
