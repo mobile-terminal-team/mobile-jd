@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>login</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            京东登录
+            <i class="iconfont">&#xe63a;</i>
+        </div>
+    </header>
+    <section>
+        <form action="" id="form">
+            <input type="text" class="userName" placeholder="用户名/邮箱/已验证手机" required pattern="^[\u4e00-\u9fa5A-Za-z0-9-_]*$||^\w+[-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$||^(\(\d{3,4}\)|\d{3,4}-)?\d{7,8}$">
+            <input type="text" class="password" placeholder="请输入密码" required pattern="^[a-zA-Z0-9]\w{5,17}$">
+            <input type="text" class="code" placeholder="请输入验证码" required pattern="^[0-9]{4}$">
+            <input type="submit" class="login" value="登录">
+        </form>
+        <p><i class="iconfont">&#xe60b;</i>一个月内免登录</p>
+        <p>
+            <span><i class="iconfont">&#xe6ca;</i>找回密码</span>
+            <span><i class="iconfont">&#xe621;</i>快速注册</span>
+        </p>
+    </section>
+    <footer>
+
+        <p><em></em>其他登录方式<em></em></p>
+        <span><i class="iconfont">&#xe646;</i><p>QQ</p></span>
+    </footer>
+    <script src="../js/zepto.min.js"></script>
+    <script src="../js/login.js"></script>
+    <script>
+        var oUserName=document.getElementsByClassName("userName")[0];
+        var oPassword=document.getElementsByClassName("password")[0];
+        var oCode=document.getElementsByClassName("code")[0];
+        var oLogin=document.getElementsByClassName("login")[0];
+        var oForm=document.getElementById("form");
+        oLogin.onclick = function () {
+            oUserName.addEventListener("invalid",fn,true);
+            oPassword.addEventListener("invalid",fn,true);
+            oCode.addEventListener("invalid",fn,true);
+        }
+        function fn() {
+            if(!this.validity.valid){
+                alert("a")
+            }else {
+                alert("b")
+            }
+
+
+            ev.preventDefault();
+        }
+    </script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
