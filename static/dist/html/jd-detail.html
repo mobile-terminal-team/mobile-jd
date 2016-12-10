@@ -1,0 +1,61 @@
+ <!--
+       Author: Rundong Zou
+      version: 1.2
+         Date: 2016/12/10  10:25
+-->
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name=description content="alipay">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <title>京东-商品详情页</title>
+        <link rel="stylesheet" href="../css/jd-detail.css">
+        <link rel="stylesheet" href="//at.alicdn.com/t/font_5bcuaatwcq4wvcxr.css" />
+        <script src="../js/zepto.min.js"></script>
+        <script src="../js/touch.js"></script>
+        <script src="../js/template.js"></script>
+        <script src='../js/js-detail.js'></script>
+</head>
+<body>
+	<div class="top">
+		<i class="iconfont icon-zuozuo" style="line-height: 4rem;font-size:2.5rem;
+color: #999;"></i>
+	</div>
+<!--<header>
+
+</header>-->
+<!--商品图片展示-->
+<header>
+	<section class="product_img">
+		<ul>
+			<li><img src="../img/pants-1-1.jpg" alt="" /></li>
+		</ul>
+	</section>	
+</header>
+<section class='text'></section>
+<section class="middle">
+	<p class="baitiao"><span class="gray f12 mar_right2rem">白条</span><span>【白条支付】 即享6期分期免息</span></p>
+	<div class="cuxiao">
+		<p class="p1">
+			<span class="gray f12 mar_rightrem">促销</span><span class="red bor_red">活动预告</span><span>12月12日0:00满三件，立减</span>
+		</p>
+		<p class="p2">
+			<span class="red bor_red mar_left">赠京豆</span><span>赠100京豆</span>
+		</p>
+		<p class="p2">
+			<span class="red bor_red f14 mar_left">限制</span><span class="red bor_red f14">赠品</span>
+		</p>
+	</div>
+
+</section>
+<!--跳转到上一页-->
+<script>
+    //跳转到上一页
+     touch.on($('.icon-zuozuo'), 'tap', function(){
+        window.history.go(-1);
+    })
+</script>
+</body>
+</html>
