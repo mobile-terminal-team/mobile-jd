@@ -1,0 +1,6 @@
+* { margin: 0; padding: 0 }
+img { border: 0 }
+li, ol, ul { list-style: none }
+a { text-decoration: none }
+@font-face { font-family: iconfont; src: url(iconfont.eot); src: url(iconfont.eot?#iefix) format('embedded-opentype'), url(iconfont.woff) format('woff'), url(iconfont.ttf) format('truetype'), url(iconfont.svg#iconfont) format('svg') }
+.iconfont { font-family: iconfont !important; font-size: 3rem; font-style: normal; -webkit-font-smoothing: antialiased; -webkit-text-stroke-width: .2px; -moz-osx-font-smoothing: grayscale }
