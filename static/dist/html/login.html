@@ -24,7 +24,7 @@
         <p><i class="iconfont">&#xe60b;</i>一个月内免登录</p>
         <p>
             <span><i class="iconfont">&#xe6ca;</i>找回密码</span>
-            <span><i class="iconfont">&#xe621;</i>快速注册</span>
+            <span><a href="./sign.html"><i class="iconfont">&#xe621;</i>快速注册</a></span>
         </p>
     </section>
     <footer>
@@ -88,6 +88,7 @@
                     if(obj.id==uName&&obj.password==uPassword){
                         alert("登录成功");
                         //在此写登录成功后的业务逻辑
+                        window.location="../index.html";
                     }else{
                         //在此写登录失败的业务逻辑
                         alert("账号或密码错误");
