@@ -7,8 +7,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>京东手机端</title>
     <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
@@ -77,7 +79,7 @@
                 <span>全球好货一手掌握</span>
                 <i class="iconfont">&#xe625;</i>
             </p>
-            <div class="swiper-container">
+            <div class="swiper-container swiper02">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <ul>
@@ -176,19 +178,19 @@
     </section>
     <footer>
          <div class="footer">
-             <a href="#">
+             <a href="">
                  <span>
                      <i class="iconfont">&#xe610;</i>
                      <p>首页</p>
                  </span>
              </a>
-             <a href="#">
+             <a href="html/jd-list.html">
                   <span>
                        <i class="iconfont">&#xe601;</i>
                        <p>分类</p>
                   </span>
              </a>
-             <a href="#">
+             <a href="html/find.html">
                   <span>
                        <i class="iconfont">&#xe606;</i>
                        <p>发现</p>
@@ -211,12 +213,17 @@
     </footer>
     <script src="js/swiper.min.js"></script>
     <script src="js/zepto.min.js"></script>
+    <script src="js/touch.js"></script>
     <script>
-        var mySwiper = new Swiper ('.swiper-container', {
+        var mySwiper = new Swiper ('.header-hanner', {
             loop: true,
             pagination: '.swiper-pagination',
         })
+        var mySwiper2 = new Swiper ('.swiper02', {
+            loop: true,
+        })
     </script>
     <script src="js/index.js"></script>
+
 </body>
 </html>

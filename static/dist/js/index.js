@@ -9,16 +9,21 @@ $(function () {
     setInterval(function () {
         getTime();
     },1000);
-    document.onclick=function () {
-        
-    }
 
-    
+
+
+    touch.on($top,"touchstart",function (ev) {
+
+    })
+
+
+
 })
 var $time = document.getElementsByClassName("time")[0];
 var $hours = document.getElementsByClassName("hours")[0];
 var $minute = document.getElementsByClassName("minute")[0];
 var $second = document.getElementsByClassName("second")[0];
+var $top = document.getElementsByClassName("top")[0];
 function getTime() {
     var d = new Date();
     var hours = d.getHours();
