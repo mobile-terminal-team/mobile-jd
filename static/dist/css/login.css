@@ -44,6 +44,21 @@ section input:nth-of-type(4){
 section input::-webkit-input-placeholder {
     font-size: 1rem;
 }
+section form{
+    position:relative;
+}
+section form span{
+    width: 4rem;
+    height: 2rem;
+    font-size: 1.5rem;
+    display: block;
+    text-align: center;
+    color: darkred;
+    border-left: 1px solid #aaaaaa;
+    position: absolute;
+    top:8.5rem;
+    right: 2rem;
+}
 section p{
     width: 90%;
     padding:5%;

@@ -9,11 +9,10 @@ $(function () {
     setInterval(function () {
         getTime();
     },1000);
-
-
-
-    touch.on($top,"touchstart",function (ev) {
-
+    touch.on($top,"tap",function (ev) {
+       $("body,html").animate({
+           scrollTop:0
+       },300)
     })
 
 
@@ -31,7 +30,7 @@ function getTime() {
     var seconds = d.getSeconds();
     var timeT = Math.ceil( hours/2 + 1/3600 )*2;
     if(timeT == 24){
-        timeT = 0
+        timeT = 0;
     }
     floor($time,timeT);
     var times = hours*3600 + minutes*60 + seconds;
