@@ -12,7 +12,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <title>京东商品分类</title>
     <link rel="stylesheet" href="../css/jd-list.css">
-    <link rel="stylesheet" href="//at.alicdn.com/t/font_5bcuaatwcq4wvcxr.css" />
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_1m5pj4xz8yggy14i.css" />
     <script src="../js/zepto.min.js"></script>
     <script src="../js/touch.js"></script>
     <script src="../js/template.js"></script>
@@ -36,8 +36,8 @@ color: #999;"></i>
         <p class="p1">专场推荐</p>
         <article>
             <ul>
-                <li><img src="../img/remen-2-1.jpg" alt=""><p>超级品牌日</p></li>
-                <li><img src="../img/remen-2-2.jpg" alt=""><p>荣耀Magic预约</p></li>
+                <li><a style="text-decoration: none;color: #000" href="jd-detail.html?id=0"><img src="../img/remen-2-1.jpg" alt=""><p>超级品牌日</p></a></li>
+                <li><a style="text-decoration: none;color: #000" href="jd-detail.html?id=1"><img src="../img/remen-2-2.jpg" alt=""><p>荣耀Magic预约</p></a></li>
                 <li><img src="../img/remen-2-3.jpg" alt=""><p>出行买1得2</p></li>
             </ul>
         </article>
@@ -237,15 +237,7 @@ color: #999;"></i>
             </ul>
         </article>
     </section>
-
-
-
 </div>
-
-
-
-
-
 
     <script id="list" type="text/html">
         <ul>
@@ -281,11 +273,19 @@ color: #999;"></i>
         //$('.section_wrap section').eq(index).show().siblings().hide();
     })
 </script>
+
 <!--跳转到详情页-->
 <script>
-    touch.on($('.section_wrap li'), 'tap', function(){
-        window.location.href= 'jd-detail.html';
-    })
+//  touch.on($('section li'), 'tap', function(){
+//  	var index = $('section li').index();
+//  	if(index%2 === 0){
+//  		localStorage.setItem("id",0);
+//  		window.location.href= 'jd-detail.html?id=0';
+//  	} else {
+//  		localStorage.setItem("id",1);
+//  		window.location.href= 'jd-detail.html?id=1';
+//  	}      
+//  })
     //跳转到上一页
      touch.on($('.icon-zuozuo'), 'tap', function(){
         window.history.go(-1);
