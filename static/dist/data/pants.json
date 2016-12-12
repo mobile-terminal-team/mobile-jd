@@ -1,0 +1,29 @@
+[
+    {
+        "id": "0",
+        "src": "../img/pants-1-1.jpg",
+        "name": "Y-3 2016秋冬新款男士灰绿色运动裤紧口休闲长裤adidas y3 23-AZ2987 绿色 M",
+        "price": "2290",
+        "comment": "12.12抢购价 ： 1603元， 再3免1，白条6期免息，支持货到付款！",
+        "color": "绿色",
+        "size": {
+            "M": "M",
+            "L": "L",
+            "XL": "XL"
+        }
+    },
+    {
+        "id": "1",
+        "src": "../img/pants-2-1.jpg",
+        "name": "Under Armour 安德玛 UA男子 Storm Jogger长裤-1279468 灰色025 L",
+        "price": "699",
+        "comment": "全季装备 修身裁剪 防风防水 舒适透气 抓绒材质",
+        "color": "绿色",
+        "size": {
+            "M": "M",
+            "L": "L",
+            "XL": "XL"
+        }
+    }
+    
+]
