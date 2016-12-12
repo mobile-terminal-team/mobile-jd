@@ -87,6 +87,7 @@
                     var obj=JSON.parse(localStorage[uName]);
                     if(obj.id==uName&&obj.password==uPassword){
                         //在此写登录成功后的业务逻辑
+                        localStorage.setItem("now",uName);
                         window.open("./../index.html");
                     }else{
                         //在此写登录失败的业务逻辑
