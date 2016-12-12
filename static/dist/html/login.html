@@ -11,7 +11,7 @@
     <header>
         <div class="header">
             京东登录
-            <i class="iconfont">&#xe63a;</i>
+            <a href="../index.html"><i class="iconfont">&#xe63a;</i></a>
         </div>
     </header>
     <section>
@@ -86,9 +86,8 @@
                 if(localStorage[uName]){
                     var obj=JSON.parse(localStorage[uName]);
                     if(obj.id==uName&&obj.password==uPassword){
-                        alert("登录成功");
                         //在此写登录成功后的业务逻辑
-                        window.location="../index.html";
+                        window.open("./../index.html");
                     }else{
                         //在此写登录失败的业务逻辑
                         alert("账号或密码错误");

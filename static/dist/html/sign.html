@@ -11,7 +11,7 @@
     <header>
         <div class="header">
             京东注册
-            <i class="iconfont">&#xe63a;</i>
+           <a href="../index.html"><i class="iconfont">&#xe63a;</i></a>
         </div>
     </header>
     <section>
@@ -90,9 +90,8 @@
                 if(localStorage[oUserName.value]){
                     alert("用户名已存在");
                 }else{
-                    alert(1);
                     localStorage.setItem(oUserName.value,JSON.stringify(obj));
-                    window.location="login.html";
+                    window.open("login.html");
                 }
             }else{
                 alert("账号或密码错误");
